@@ -1,0 +1,47 @@
+// container 
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+//light version
+.light #header,
+.light #main,
+.light #aboutCont,
+.light #referCont,
+.light #scriptCont,
+.light #youtubeCont,
+.light #footer {
+    background: #f0eeeb;
+}
+
+.light #header {
+    color: #000;
+    border-bottom: 1px solid #dad8d1;
+}
+
+.light #header .header__port a::before,
+.light #header .header__port a::after {
+    background: #000;
+}
+
+.light #footer {
+    border-top: 1px solid #dad8d1;
+    color: #000;
+}
+
+.light #footer div:nth-child(1),
+.light #footer div:nth-child(2) {
+    border-right: 1px solid #dad8d1;
+}
+
+.light .wrap__title h2 {
+    color: #000;
+}
+
+.light .about__cont .about__txt {
+    color: #000;
+}
+
+

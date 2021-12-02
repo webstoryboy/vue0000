@@ -1,0 +1,209 @@
+<template>
+  <Header />
+  <main id="main">
+    <section id="referCont">
+      <div class="container">
+        <WrapTitle name1="reference" name2="html" />
+        <div class="refer__cont">
+          <div class="table">
+            <h3>HTML</h3>
+            <ul>
+              <li>
+                <a href="referDetail.html">
+                  <span class="num">1</span>
+                  <span class="attr">&lt;a&gt;</span>
+                  <span class="desc"
+                    >&lt;a&gt; 태그는 다른 페이지 이동을 설정합니다.</span
+                  >
+                  <span class="Inline">Inline Element</span>
+                </a>
+              </li>
+              <li>
+                <a href="referDetail.html">
+                  <span class="num">1</span>
+                  <span class="attr">&lt;a&gt;</span>
+                  <span class="desc"
+                    >&lt;a&gt; 태그는 다른 페이지 이동을 설정합니다.</span
+                  >
+                  <span class="Inline">Inline Element</span>
+                </a>
+              </li>
+              <li>
+                <a href="referDetail.html">
+                  <span class="num">1</span>
+                  <span class="attr">&lt;a&gt;</span>
+                  <span class="desc"
+                    >&lt;a&gt; 태그는 다른 페이지 이동을 설정합니다.</span
+                  >
+                  <span class="Inline">Inline Element</span>
+                </a>
+              </li>
+              <li>
+                <a href="referDetail.html">
+                  <span class="num">1</span>
+                  <span class="attr">&lt;a&gt;</span>
+                  <span class="desc"
+                    >&lt;a&gt; 태그는 다른 페이지 이동을 설정합니다.</span
+                  >
+                  <span class="Inline">Inline Element</span>
+                </a>
+              </li>
+              <li>
+                <a href="referDetail.html">
+                  <span class="num">1</span>
+                  <span class="attr">&lt;a&gt;</span>
+                  <span class="desc"
+                    >&lt;a&gt; 태그는 다른 페이지 이동을 설정합니다.</span
+                  >
+                  <span class="Inline">Inline Element</span>
+                </a>
+              </li>
+              <li>
+                <a href="referDetail.html">
+                  <span class="num">1</span>
+                  <span class="attr">&lt;a&gt;</span>
+                  <span class="desc"
+                    >&lt;a&gt; 태그는 다른 페이지 이동을 설정합니다.</span
+                  >
+                  <span class="Inline">Inline Element</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</template>
+
+<script>
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+import WrapTitle from "@/components/WrapTitle.vue";
+
+export default {
+  components: {
+    Header,
+    Footer,
+    WrapTitle,
+  },
+};
+</script>
+
+<style lang="scss">
+//refer__cont
+#referCont {
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 300px;
+}
+.refer__cont {
+  .table {
+    border-bottom: 2px solid #fff;
+    margin-top: 1.2rem;
+
+    h3 {
+      padding-bottom: 10px;
+    }
+
+    li {
+      margin: 0;
+      list-style: none;
+      border-top: 1px solid #fff;
+      position: relative;
+      transition: all 0.3s;
+      overflow: hidden;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.081);
+      }
+
+      span {
+        display: inline-block;
+        float: left;
+        padding: 25px 10px;
+        font-size: 14px;
+        font-family: "SCoreDream";
+        box-sizing: border-box;
+
+        &:nth-child(1) {
+          width: 5%;
+          text-align: center;
+        }
+        &:nth-child(2) {
+          width: 10%;
+        }
+        &:nth-child(3) {
+          width: 75%;
+        }
+        &:nth-child(4) {
+          width: 10%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.refer__detail {
+  font-family: "SCoreDream";
+  font-weight: 300;
+  margin-bottom: 300px;
+
+  h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  p {
+    background: #000;
+    padding: 22px 20px 20px 20px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  table {
+    font-family: "SCoreDream";
+    width: 100%;
+    border: 1px solid #dad8d1;
+    text-align: left;
+
+    td,
+    th {
+      font-weight: normal;
+      padding: 14px 12px 12px 12px;
+      line-height: 1.5;
+      vertical-align: middle;
+      border-bottom: 1px solid #dad8d1;
+      border-right: 1px solid #dad8d1;
+    }
+  }
+  li {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+  }
+  h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 3px 6px 1px 6px;
+  }
+  .list-btn {
+    margin-top: 50px;
+    border: 1px solid #dad8d1;
+    text-align: center;
+    display: block;
+    font-family: "S-CoreDream-3Light";
+    padding: 20px;
+    transition: all 0.3s;
+
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+</style>
